@@ -12,6 +12,7 @@
 
 - name: update lb and db servers
   hosts: lb, db
+  gather_facts: false
   remote_user: ubuntu
   become: yes
   become_user: root
