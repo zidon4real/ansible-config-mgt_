@@ -10,7 +10,7 @@
         name: wireshark
         state: latest
 
-- name: update LB server and db servers
+- name: update lb and db servers
   hosts: lb, db
   remote_user: ubuntu
   become: yes
