@@ -16,9 +16,9 @@
   become: yes
   become_user: root
   tasks:
-    - name: Print gathered facts
-      debug:
-        var: ansible_facts
+    - name: Update apt repo
+      apt: 
+        update_cache: yes
 
     - name: ensure wireshark is at the latest version
       apt:
