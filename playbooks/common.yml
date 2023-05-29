@@ -19,7 +19,7 @@
   tasks:
     - name: Update apt repo
       apt: 
-        update_cache: yes
+        update_cache: no
 
     - name: ensure wireshark is at the latest version
       apt:
