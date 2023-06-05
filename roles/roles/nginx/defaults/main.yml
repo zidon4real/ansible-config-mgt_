@@ -84,7 +84,7 @@ nginx_upstreams:
   keepalive: 16 # optional
   servers:
     - "172.31.94.121 weight=3"
-    - "172.31.82.160weight=3"
+    - "172.31.82.160 weight=3"
   
 
 nginx_log_format: |-
